@@ -86,5 +86,5 @@ nvd_json_dict = openFile(recent_nvd_file)
 # traverse the nvd dict to get all the cve information as a list of cve's
 cveInstanceList = getCveInformation(nvd_json_dict)
 
-print(cveInstanceList[0].getlastPublishedDate())
+print(cveInstanceList[0].getLastPublishedDate())
 

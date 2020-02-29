@@ -19,7 +19,7 @@ class Cve:
     def getimpactScore(self):
         return self.impactScore
 
-    # Returns the lastPublishedDate of the cve as a dateTime Object.
+    # Returns the lastPublishedDate of the cve as a string.
     def getlastPublishedDate(self):
         return self.lastPublishedDate
 
