@@ -5,9 +5,10 @@
 
 class Cve:
     # init method that constructs a instance of a cve
-    def __init__(self, cveIdNumber, impactScore, lastPublishedDate, description):
+    def __init__(self, cveIdNumber, impactScoreV2, impactScoreV3, lastPublishedDate, description):
         self.cveIdNumber = cveIdNumber
-        self.impactScore = impactScore
+        self.impactScoreV2 = impactScoreV2
+        self.impactScoreV3 = impactScoreV3
         self.lastPublishedDate = lastPublishedDate
         self.description = description
 
@@ -16,8 +17,11 @@ class Cve:
         return self.cveIdNumber
 
     # Returns the impactScore of the cve as a string.
-    def getimpactScore(self):
-        return self.impactScore
+    def getimpactScoreV2(self):
+        return self.impactScoreV2
+
+    def getimpactScoreV3(self):
+        return self.impactScoreV3
 
     # Returns the lastPublishedDate of the cve as a dateTime Object.
     def getlastPublishedDate(self):
