@@ -18,7 +18,7 @@ print(current_time_when_program_runs)
 print(current_time_minus_two_hours) 
 print(current_time_when_program_runs > current_time_minus_two_hours)
 
-
+listofKeywords =['Apple','Google','Microsoft','IDM','Cisco','Debian','Redhat','Orcale','Adobe',] # holds the list of keywords we want to look for
 
 # opens the provided json file and reads the file
 def openFile(file):
@@ -39,8 +39,10 @@ def getCveInformation(nvd_json_dict):
         cve_impact_scoreV2 = FindCveImpactScoreV2(cve)
         cve_impact_scoreV3 = FindCveImpactScoreV3(cve)
         cve_description = FindDescription(cve_info)
-        cve_object = CveClass.Cve(cve_id_number, cve_impact_scoreV2, cve_impact_scoreV3, cve_last_published_date, cve_last_modified_date, cve_description)
-        cveList.append(cve_object)
+        
+        if CheckForKeywords(cve_description) == True :
+            cve_object = CveClass.Cve(cve_id_number, cve_impact_scoreV2, cve_impact_scoreV3, cve_last_published_date, cve_last_modified_date, cve_description)
+            cveList.append(cve_object)
     return cveList
 
 # helper function to traverse the cve info dict and returns the cve ID Number
@@ -104,7 +106,12 @@ def FindCveImpactScoreV3(cve):
         cve_impact_score = 'No impact score available'
     return cve_impact_score
 
-
+def CheckForKeywords(description):
+    for keyword in listofKeywords:
+        if keyword in description:
+            return True
+            break
+    return False 
 
 # the file we want to read and traverse
 recent_nvd_file = '/home/ubuntu/SWEProject/nvdFileLocation/nvdcve-1.1-recent.json'
@@ -116,6 +123,6 @@ nvd_json_dict = openFile(recent_nvd_file)
 # traverse the nvd dict to get all the cve information as a list of cve's
 cveInstanceList = getCveInformation(nvd_json_dict)
 
-print(cveInstanceList[56].getLastModifiedDate())
-print(cveInstanceList[56].getlastPublishedDate())
+print(cveInstanceList[20].getDescription())
+print(cveInstanceList[20].getlastPublishedDate())
 
