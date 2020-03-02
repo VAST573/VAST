@@ -12,11 +12,8 @@ import datetime
 
 current_time_when_program_runs = datetime.datetime.now()
 
-current_time_minus_two_hours =  current_time_when_program_runs.replace(hour=current_time_when_program_runs.hour - 2)
+current_time_when_program_runs_minus_two_hours = current_time_when_program_runs.replace(hour=current_time_when_program_runs.hour - 2)
 
-print(current_time_when_program_runs)
-print(current_time_minus_two_hours) 
-print(current_time_when_program_runs > current_time_minus_two_hours)
 
 listofKeywords =['Apple','Google','Microsoft','IDM','Cisco','Debian','Redhat','Orcale','Adobe',] # holds the list of keywords we want to look for
 
@@ -41,8 +38,9 @@ def getCveInformation(nvd_json_dict):
         cve_description = FindDescription(cve_info)
         
         if CheckForKeywords(cve_description) == True :
-            cve_object = CveClass.Cve(cve_id_number, cve_impact_scoreV2, cve_impact_scoreV3, cve_last_published_date, cve_last_modified_date, cve_description)
-            cveList.append(cve_object)
+            if PublishedLastTwoHours(cve_last_published_date) == True:
+                cve_object = CveClass.Cve(cve_id_number, cve_impact_scoreV2, cve_impact_scoreV3, cve_last_published_date, cve_last_modified_date, cve_description)
+                cveList.append(cve_object)
     return cveList
 
 # helper function to traverse the cve info dict and returns the cve ID Number
@@ -113,6 +111,15 @@ def CheckForKeywords(description):
             break
     return False 
 
+def PublishedLastTwoHours(cve_last_published_date):
+     if (cve_last_published_date > current_time_when_program_runs_minus_two_hours) and (cve_last_published_date < current_time_when_program_runs):
+         return True
+     elif (cve_last_published_date == current_time_when_program_runs):
+         return True
+     elif (cve_last_published_date == current_time_when_program_runs_minus_two_hours):
+         return True
+     return False
+
 # the file we want to read and traverse
 recent_nvd_file = '/home/ubuntu/SWEProject/nvdFileLocation/nvdcve-1.1-recent.json'
 
@@ -123,6 +130,6 @@ nvd_json_dict = openFile(recent_nvd_file)
 # traverse the nvd dict to get all the cve information as a list of cve's
 cveInstanceList = getCveInformation(nvd_json_dict)
 
-print(cveInstanceList[20].getDescription())
-print(cveInstanceList[20].getlastPublishedDate())
+print(cveInstanceList[10].getDescription())
+print(cveInstanceList[10].getlastPublishedDate())
 
