@@ -70,9 +70,8 @@ def getEntryLink(post):
     link = LinkWithHtlmTags.get('href')
     return usCertGov + link
 
-
 """ calling functions to test """
 
-getncasCurrentActivity(url)
-print(listofEntrys[0].getEntryDescription())
+#getncasCurrentActivity(url)
+#print(listofEntrys[0].getEntryDescription())
 

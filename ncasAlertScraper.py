@@ -97,8 +97,8 @@ def getSummary(content):
 
 """ calling functions to test """
 
-getAllOfAlerts(url)
+#getAllOfAlerts(url)
 
-ncasAlert = getRecentAlertInfo(listOfLinks[0])
+#ncasAlert = getRecentAlertInfo(listOfLinks[0])
 
-print(ncasAlert.getSummaryList())
+#print(ncasAlert.getSummaryList())

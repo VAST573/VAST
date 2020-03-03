@@ -1,6 +1,7 @@
 import json
 import CveClass
 import datetime
+from datetime import timedelta
 
 
 # This module takes in the nvd recent file.
@@ -12,10 +13,9 @@ import datetime
 
 current_time_when_program_runs = datetime.datetime.now()
 
-current_time_when_program_runs_minus_two_hours = current_time_when_program_runs.replace(hour=current_time_when_program_runs.hour - 2)
+current_Time_minus_2_hours = current_time_when_program_runs - timedelta(hours = 2)
 
-
-listofKeywords =['Apple','Google','Microsoft','IDM','Cisco','Debian','Redhat','Orcale','Adobe','WordPress','Drupal','FluxBB','UseBB','Canonical'] # holds the list of keywords we want to look for
+listofKeywords =['Windows','SUSE','Amazon','Apple','Google','kill-port-process','Microsoft','IDM','IBM','Cisco','Debian','Redhat','Oracle','Adobe','WordPress','Drupal','FluxBB','UseBB','Canonical'] # holds the list of keywords we want to look for
 
 # opens the provided json file and reads the file
 def openFile(file):
@@ -35,9 +35,8 @@ def getCveInformation(nvd_json_dict):
         cve_last_modified_date = FindLastModifiedDate(cve)
         cve_impact_scoreV2 = FindCveImpactScoreV2(cve)
         cve_impact_scoreV3 = FindCveImpactScoreV3(cve)
-        cve_description = FindDescription(cve_info)
-        
-        if CheckForKeywords(cve_description) == True :
+        cve_description = FindDescription(cve_info) 
+        if CheckForKeywords(cve_description) == True : 
             if PublishedLastTwoHours(cve_last_published_date) == True:
                 cve_object = CveClass.Cve(cve_id_number, cve_impact_scoreV2, cve_impact_scoreV3, cve_last_published_date, cve_last_modified_date, cve_description)
                 cveList.append(cve_object)
@@ -61,7 +60,8 @@ def FindLastModifiedDate(cve):
     time_str = SecondSplit[0]
     dateTime_str = date_str +' '+ time_str
     dateTime_object = datetime.datetime.strptime(dateTime_str, '%Y-%m-%d %H:%M')
-    return dateTime_object
+    dateTime_To_Est = dateTime_object - timedelta(hours = 5)
+    return dateTime_To_Est
 
 
 def FindLastPublishedDate(cve):
@@ -72,7 +72,8 @@ def FindLastPublishedDate(cve):
     time_str = SecondSplit[0]
     dateTime_str = date_str +' '+ time_str
     dateTime_object = datetime.datetime.strptime(dateTime_str, '%Y-%m-%d %H:%M')
-    return dateTime_object
+    dateTime_To_Est = dateTime_object - timedelta(hours = 5)
+    return dateTime_To_Est
 
 
 # helper function to traverse the cve info dict and returns the description
@@ -95,6 +96,8 @@ def FindCveImpactScoreV2(cve):
         cve_impact_score = 'No impact score available'
     return cve_impact_score
 
+
+# helper function to return impact score V3
 def FindCveImpactScoreV3(cve):
     cve_impact = cve['impact']
     if 'baseMetricV3' in cve_impact.keys():
@@ -104,6 +107,8 @@ def FindCveImpactScoreV3(cve):
         cve_impact_score = 'No impact score available'
     return cve_impact_score
 
+
+# helper fucniton to check if decsription of  cve has one of our keywords
 def CheckForKeywords(description):
     for keyword in listofKeywords:
         if keyword in description:
@@ -111,25 +116,22 @@ def CheckForKeywords(description):
             break
     return False 
 
+
+# checsk if cve was published in the last two hours  
 def PublishedLastTwoHours(cve_last_published_date):
-     if (cve_last_published_date > current_time_when_program_runs_minus_two_hours) and (cve_last_published_date < current_time_when_program_runs):
-         return True
-     elif (cve_last_published_date == current_time_when_program_runs):
-         return True
-     elif (cve_last_published_date == current_time_when_program_runs_minus_two_hours):
-         return True
-     return False
+    if (cve_last_published_date > current_Time_minus_2_hours):
+        return True
+    return False 
 
 # the file we want to read and traverse
-recent_nvd_file = '/home/ubuntu/SWEProject/nvdFileLocation/nvdcve-1.1-recent.json'
+#recent_nvd_file = '/home/ubuntu/SWEProject/nvdFileLocation/nvdcve-1.1-recent.json'
 
 
 # The nvd json file as a dict
-nvd_json_dict = openFile(recent_nvd_file)
+#nvd_json_dict = openFile(recent_nvd_file)
 
 # traverse the nvd dict to get all the cve information as a list of cve's
-cveInstanceList = getCveInformation(nvd_json_dict)
+#cveInstanceList = getCveInformation(nvd_json_dict)
 
-print(cveInstanceList[10].getDescription())
-print(cveInstanceList[10].getlastPublishedDate())
-
+#print(cveInstanceList[10].getDescription())
+#print(cveInstanceList[10].getlastPublishedDate())
