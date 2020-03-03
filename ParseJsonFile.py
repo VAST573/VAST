@@ -15,7 +15,7 @@ current_time_when_program_runs = datetime.datetime.now()
 current_time_when_program_runs_minus_two_hours = current_time_when_program_runs.replace(hour=current_time_when_program_runs.hour - 2)
 
 
-listofKeywords =['Apple','Google','Microsoft','IDM','Cisco','Debian','Redhat','Orcale','Adobe',] # holds the list of keywords we want to look for
+listofKeywords =['Apple','Google','Microsoft','IDM','Cisco','Debian','Redhat','Orcale','Adobe','WordPress','Drupal','FluxBB','UseBB','Canonical'] # holds the list of keywords we want to look for
 
 # opens the provided json file and reads the file
 def openFile(file):
