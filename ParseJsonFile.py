@@ -15,7 +15,8 @@ current_time_when_program_runs = datetime.datetime.now()
 
 current_Time_minus_2_hours = current_time_when_program_runs - timedelta(hours = 2)
 
-listofKeywords =['Windows','SUSE','Amazon','Apple','Google','kill-port-process','Microsoft','IDM','IBM','Cisco','Debian','Redhat','Oracle','Adobe','WordPress','Drupal','FluxBB','UseBB','Canonical'] # holds the list of keywords we want to look for
+listofKeywords = ['Apple','Google','kill-port-process','Microsfot','IDM','IBM','Cisco','Debian','Redhat','Oracle','Adobe','WordPress','Drupal','FluxBB','UseBB','Canonical','Amazon','Linux','Mozilla','Wireshark','SUSE','Apache','Mcafee','PHP','Windows','Firefox','iPadOS','Netgear','iOS','macOS']
+
 
 # opens the provided json file and reads the file
 def openFile(file):
@@ -35,10 +36,11 @@ def getCveInformation(nvd_json_dict):
         cve_last_modified_date = FindLastModifiedDate(cve)
         cve_impact_scoreV2 = FindCveImpactScoreV2(cve)
         cve_impact_scoreV3 = FindCveImpactScoreV3(cve)
-        cve_description = FindDescription(cve_info) 
-        if CheckForKeywords(cve_description) == True : 
-            if PublishedLastTwoHours(cve_last_published_date) == True:
-                cve_object = CveClass.Cve(cve_id_number, cve_impact_scoreV2, cve_impact_scoreV3, cve_last_published_date, cve_last_modified_date, cve_description)
+        cve_description = FindDescription(cve_info)
+        cve_keyWordID = CheckForKeywords(cve_description)
+        if PublishedLastTwoHours(cve_last_published_date) == True:
+            if cve_keyWordID > 0:
+                cve_object = CveClass.Cve(cve_id_number, cve_impact_scoreV2, cve_impact_scoreV3, cve_last_published_date, cve_last_modified_date, cve_description, cve_keyWordID)
                 cveList.append(cve_object)
     return cveList
 
@@ -112,9 +114,9 @@ def FindCveImpactScoreV3(cve):
 def CheckForKeywords(description):
     for keyword in listofKeywords:
         if keyword in description:
-            return True
+            return listofKeywords.index(keyword) + 1
             break
-    return False 
+    return 0
 
 
 # checsk if cve was published in the last two hours  
