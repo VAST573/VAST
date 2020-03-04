@@ -18,7 +18,8 @@ nvd_json_dict = ParseJsonFile.openFile(recent_nvd_file)
 
 # traverse the nvd dict to get all the cve information as a list of cve's
 cveInstanceList = ParseJsonFile.getCveInformation(nvd_json_dict)
+print(cveInstanceList)
 
-#print(cveInstanceList[0].getDescription())
+
 LoadCvesInDatabase.addCvesToDatabase(cveInstanceList)
 
