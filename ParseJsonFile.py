@@ -113,7 +113,7 @@ def FindCveImpactScoreV3(cve):
 # helper fucniton to check if decsription of  cve has one of our keywords
 def CheckForKeywords(description):
     for keyword in listofKeywords:
-        if keyword in description:
+        if keyword.lower() in description.lower():
             return listofKeywords.index(keyword) + 1
             break
     return 0
