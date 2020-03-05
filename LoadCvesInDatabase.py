@@ -2,6 +2,7 @@ import pymysql
 import mysql.connector
 from mysql.connector import errorcode
 import CveClass
+
 def addCvesToDatabase(cveInstanceList):
     try:
         cnx = mysql.connector.connect(user='cyberuser', password='cyber',
@@ -15,9 +16,9 @@ def addCvesToDatabase(cveInstanceList):
             cnx.close()
         else:
             for cve in cveInstanceList:
-                insertCVE = """INSERT INTO CVE_Alerts (cve_alert_id, CVE_Number, description, impactV2, impactV3, publish_date, modified_date) VALUES  ({}, {}, {}, {}, {}, {}))""".format(cve.getcveIDNumber, cve.getDescription, cve.getimpactScoreV2, cve.getimpactScoreV3, cve.getlastPublishedDate, cve.getLastModifiedDate)
+                insertCVE = 'INSERT INTO CVE_Alerts (cve_alert_id, CVE_Number, description, impactV2, impactV3, publish_date, modified_date) VALUES  ({}, {}, {}, {}, {}, {}))'.format(cve.getcveIDNumber, cve.getDescription, cve.getimpactScoreV2, cve.getimpactScoreV3, cve.getlastPublishedDate, cve.getLastModifiedDate)
                 cursor.execute(insertCVE)
-
+        print('cves where addded to the database')
         cnx.close()
     except mysql.connector.Error as error:
         print("Failed to insert record into Laptop table {}".format(error))
