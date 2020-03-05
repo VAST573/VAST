@@ -84,21 +84,23 @@ def getAlertReleaseDate(header):
 
 # Helper function, finds the  section that holds the summary of the alert
 # then finds the field for the summary text
-# returns the summary of the alert as a list
+# returns the summary of the alert
 def getSummary(content):
     article = content.find('article', attrs={'role': 'article'})
     summaryField = article.find('div', attrs={
         'class': 'field field--name-body field--type-text-with-summary field--label-hidden field--item'})
-    summaryList = []  # used to store each paragraph
+    summary = '' # used to concatenate all the summarys into one big summary
     for info in summaryField.findAll('p'):  # loop that gets a paragraoh and stores it in the summaryList
-        summaryList.append(info)
-    return summaryList
-
+        soup = BeautifulSoup(str(info), 'lxml')
+        summary += soup.get_text()
+    return summary
 
 """ calling functions to test """
 
-#getAllOfAlerts(url)
+getAllOfAlerts(url)
 
-#ncasAlert = getRecentAlertInfo(listOfLinks[0])
-
-#print(ncasAlert.getSummaryList())
+ncasAlert = getRecentAlertInfo(listOfLinks[0])
+#print(ncasAlert.getPageTitle())
+#print(ncasAlert.getSubTitle())
+#print(ncasAlert.getReleaseDate())
+#4print(ncasAlert.getSummaryList())

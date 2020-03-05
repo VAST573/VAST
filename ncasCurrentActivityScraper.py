@@ -72,6 +72,10 @@ def getEntryLink(post):
 
 """ calling functions to test """
 
-#getncasCurrentActivity(url)
+getncasCurrentActivity(url)
+#print(listofEntrys[0].getEntryTitle())
+#print(listofEntrys[0].getEntryDate())
 #print(listofEntrys[0].getEntryDescription())
+#print(listofEntrys[0].getEntryLink())
+
 
