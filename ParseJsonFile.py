@@ -13,9 +13,9 @@ from datetime import timedelta
 
 current_time_when_program_runs = datetime.datetime.now()
 
-current_Time_minus_2_hours = current_time_when_program_runs - timedelta(hours = 5,minutes=30)
+current_Time_minus_2_hours = current_time_when_program_runs - timedelta(hours = 8,minutes=30)
 
-listofKeywords = ['Apple','Google','kill-port-process','Microsfot','IDM','IBM','Cisco','Debian','Redhat','Oracle','Adobe','WordPress','Drupal','FluxBB','UseBB','Canonical','Amazon','Linux','Mozilla','Wireshark','SUSE','Apache','Mcafee','PHP','Windows','Firefox','iPadOS','Netgear','iOS','macOS']
+listofKeywords = ['Apple','Google','kill-port-process','Microsoft','IDM','IBM','Cisco','Debian','Redhat','Oracle','Adobe','WordPress','Drupal','FluxBB','UseBB','Canonical','Amazon','Linux','Mozilla','Wireshark','SUSE','Apache','Mcafee','PHP','Windows','Firefox','iPadOS','Netgear','iOS','macOS']
 
 
 # opens the provided json file and reads the file
@@ -95,7 +95,7 @@ def FindCveImpactScoreV2(cve):
         cve_impact_score = cve_impact_metric_version['impactScore']
         return cve_impact_score
     else:
-        cve_impact_score = 'No impact score available'
+        cve_impact_score = 0.0
     return cve_impact_score
 
 
@@ -106,7 +106,7 @@ def FindCveImpactScoreV3(cve):
         cve_impact_metric_version = cve_impact['baseMetricV3']
         cve_impact_score = cve_impact_metric_version['impactScore']
     else:
-        cve_impact_score = 'No impact score available'
+        cve_impact_score = 0.0
     return cve_impact_score
 
 
