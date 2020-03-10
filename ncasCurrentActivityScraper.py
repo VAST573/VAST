@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
 import ncasCurrentActivityClass
+import datetime
 
 # This module web scrapes the ncas current activity page to find and grab
 # all the current activity posts on the website.
@@ -13,6 +14,7 @@ import ncasCurrentActivityClass
 usCertGov = 'https://www.us-cert.gov'  # used to create a full link
 url = 'https://www.us-cert.gov/ncas/current-activity'  # the url of the website we want to scrape
 listofEntrys = []  # stores the list of all the entry's
+current_date = datetime.date.today()
 
 
 # Makes a request to a web page and requests the data from the page.
@@ -34,13 +36,16 @@ def getCurrentEntrys(content):
         entryDescription = getEntryDescription(post)
         entryLink = getEntryLink(post)
         entry = ncasCurrentActivityClass.NcasCAObject(entryTitle, entryDate, entryDescription, entryLink)
-        listofEntrys.append(entry)
+        if entry.getEntryDate() == current_date:
+            listofEntrys.append(entry)
 
 
 # helper function that finds the title of the entry using the html tag
 # returns the title as a string
 def getEntryTitle(post):
-    entryTitle = post.find('h3', attrs={"class": "entry-title"}).text.encode('utf-8')
+    entryTitle = post.find('h3', attrs={"class": "entry-title"})
+    soup = BeautifulSoup(str(entryTitle),'lxml')
+    entryTitle = soup.get_text()
     return entryTitle
 
 
@@ -50,14 +55,18 @@ def getEntryDate(post):
     entryDate = post.find('div', attrs={"class": "entry-date"}).text.encode('utf-8')  # finds entry date ( as a string )
     stringDate = str(entryDate)
     stringDateList = stringDate.split(',')
-    entryDate = stringDateList[1] + stringDateList[2]
+    stringDate = stringDateList[1] + stringDateList[2]
+    stringDate = stringDate[1 : (len(stringDate) - 1)]
+    entryDate = datetime.datetime.strptime(stringDate, '%B %d %Y').date()
     return entryDate
 
 
 # helper function that finds the description of the entry
 # returns the description as a string
 def getEntryDescription(post):
-    entryDescription = post.find('div', attrs={"class": "views-field views-field-body"}).text.encode('utf-8')
+    entryDescription = post.find('div', attrs={"class": "views-field views-field-body"})
+    soup = BeautifulSoup(str(entryDescription), 'lxml')
+    entryDescription = soup.get_text()
     return entryDescription
 
 
