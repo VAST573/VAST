@@ -1,6 +1,9 @@
 from bs4 import BeautifulSoup
 import requests
 import ncasAlertClass
+import datetime
+from datetime import timedelta
+import pickle
 
 # This module scraps the ncas alert website for the list of alerts.( the alerts are posted as links )
 # then web scraps the most recent alert website and make a ncas alert instance that holds the
@@ -47,8 +50,11 @@ def getRecentAlertInfo(url):
         subTitle = getAlertSubTitle(header)
         releaseDate = getAlertReleaseDate(header)
         summaryList = getSummary(content)
-
         ncasAlert = ncasAlertClass.NcasAlert(pageTitle, subTitle, releaseDate, summaryList)
+        if checkIfNewAlert(ncasAlert) is True:
+            print('This alert is new, now we want to add it to the database')
+        else:
+            print('There was no new alert posted yet. Meaning that we added this one to the database already. do nothing')
     return ncasAlert
 
 
@@ -63,6 +69,8 @@ def getAlertHeader(region):
 # returns the pageTitle of the alert as a string
 def getAlertPageTitle(header):
     pageTitle = header.find('h1', attrs={'id': 'page-title'})
+    soup = BeautifulSoup(str(pageTitle), 'lxml')
+    pageTitle = soup.get_text()
     return pageTitle
 
 
@@ -71,6 +79,8 @@ def getAlertPageTitle(header):
 def getAlertSubTitle(header):
     subTitle = header.find('h2', attrs={
         'id': 'page-sub-title'})
+    soup = BeautifulSoup(str(subTitle), 'lxml')
+    subTitle = soup.get_text()
     return subTitle
 
 
@@ -78,8 +88,22 @@ def getAlertSubTitle(header):
 # returns the release date of the alert as a string ( Ex. feb 20, 2020 )
 def getAlertReleaseDate(header):
     releaseDate = header.find('div', attrs={
-        'class': 'submitted meta-text'})
-    return releaseDate
+        'class': 'submitted meta-text'}).text.encode('utf-8')
+    dateArray = releaseDate.split()
+    bMonth = dateArray[3]
+    bDay = dateArray[4]
+    bYear = dateArray[5]
+    bMonthArray = str(bMonth).split("'")
+    bDayArray = str(bDay).split("'")
+    bYearArray = str(bYear).split("'")
+    strMonth = bMonthArray[1]
+    strDay = bDayArray[1]
+    Day = strDay.split(',') #['18','']
+    strYear = bYearArray[1] #2020
+    dash = '-' # used to spearatce each part of the date
+    strDate = strYear + dash + strMonth + dash + Day[0] #2020-January-18
+    datetime_object = datetime.datetime.strptime(strDate, '%Y-%B-%d')
+    return datetime_object
 
 
 # Helper function, finds the  section that holds the summary of the alert
@@ -94,6 +118,24 @@ def getSummary(content):
         soup = BeautifulSoup(str(info), 'lxml')
         summary += soup.get_text()
     return summary
+
+
+# This function is used to check if there was a new alert posted to the ncas  alert feed/page.
+# It uses the pickle module to load and dump the alert object. This is the smae as serializing and deserializing
+# a object to a file. This is used to save a objects state. If the alert in the ncasAlertSerialization file is the same as
+# the alert made when running the program, then there was no new alert posted. they they are different, that is a new alert
+# write the new alert to the file so it can use alert when running the program again. 
+def checkIfNewAlert(ncasAlert):
+    with open('ncasAlertSerialization','rb') as alert_saved_to_file:
+        lastAlert = pickle.load(alert_saved_to_file)
+        if lastAlert.getPageTitle().lower() == ncasAlert.getPageTitle().lower():
+            alert_saved_to_file.close()
+            return False
+        else:
+            with open('ncasAlertSerialization','wb') as alert_saved_to_file:
+                pickle.dump(ncasAlert,alert_saved_to_file)
+                alert_saved_to_file.close()
+                return True
 
 """ calling functions to test """
 
