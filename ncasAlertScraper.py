@@ -1,9 +1,11 @@
+#!/usr/bin/env python3
+
 from bs4 import BeautifulSoup
 import requests
 import ncasAlertClass
 import datetime
-from datetime import timedelta
 import pickle
+import ParseJsonFile
 
 # This module scraps the ncas alert website for the list of alerts.( the alerts are posted as links )
 # then web scraps the most recent alert website and make a ncas alert instance that holds the
@@ -50,12 +52,9 @@ def getRecentAlertInfo(url):
         subTitle = getAlertSubTitle(header)
         releaseDate = getAlertReleaseDate(header)
         summaryList = getSummary(content)
-        ncasAlert = ncasAlertClass.NcasAlert(pageTitle, subTitle, releaseDate, summaryList)
-        if checkIfNewAlert(ncasAlert) is True:
-            print('This alert is new, now we want to add it to the database')
-        else:
-            print('There was no new alert posted yet. Meaning that we added this one to the database already. do nothing')
-    return ncasAlert
+        keywordID = ParseJsonFile.CheckForKeywords(subTitle)
+        ncasAlert = ncasAlertClass.NcasAlert(pageTitle, subTitle, releaseDate, summaryList,keywordID)
+        return ncasAlert
 
 
 # Helper function, finds the header of the section of the region
@@ -102,7 +101,9 @@ def getAlertReleaseDate(header):
     strYear = bYearArray[1] #2020
     dash = '-' # used to spearatce each part of the date
     strDate = strYear + dash + strMonth + dash + Day[0] #2020-January-18
-    datetime_object = datetime.datetime.strptime(strDate, '%Y-%B-%d')
+    date = datetime.datetime.strptime(strDate, '%Y-%B-%d')
+    cur = datetime.datetime.now()
+    datetime_object = datetime.datetime(date.year, date.month, date.day, cur.hour, cur.minute, cur.second)
     return datetime_object
 
 
@@ -137,12 +138,7 @@ def checkIfNewAlert(ncasAlert):
                 alert_saved_to_file.close()
                 return True
 
-""" calling functions to test """
 
+""" calling functions """
 getAllOfAlerts(url)
-
 ncasAlert = getRecentAlertInfo(listOfLinks[0])
-#print(ncasAlert.getPageTitle())
-#print(ncasAlert.getSubTitle())
-#print(ncasAlert.getReleaseDate())
-#4print(ncasAlert.getSummaryList())

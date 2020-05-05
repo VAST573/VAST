@@ -1,0 +1,561 @@
+2020-04-11 20:27:53,283 INFO     
+file was run by crontab at this time.It took 0.13728547096252441seconds for program to run
+2020-04-11 20:27:53,283 INFO     []
+2020-04-11 20:28:02,459 INFO     
+file was run by crontab at this time.It took 0.07674527168273926seconds for program to run
+2020-04-11 20:28:02,459 INFO     []
+2020-04-11 20:29:02,149 INFO     
+file was run by crontab at this time.It took 0.15150976181030273seconds for program to run
+2020-04-11 20:29:02,149 INFO     []
+2020-04-11 20:30:02,799 INFO     
+file was run by crontab at this time.It took 0.20980358123779297seconds for program to run
+2020-04-11 20:30:02,799 INFO     []
+2020-04-11 22:30:02,990 INFO     
+file was run by crontab at this time.It took 0.11022210121154785seconds for program to run
+2020-04-11 22:30:02,990 INFO     []
+2020-04-12 00:30:07,057 INFO     
+file was run by crontab at this time.It took 5.268311500549316seconds for program to run
+2020-04-12 00:30:07,057 INFO     []
+2020-04-12 02:30:02,214 INFO     
+file was run by crontab at this time.It took 0.13365650177001953seconds for program to run
+2020-04-12 02:30:02,214 INFO     []
+2020-04-12 04:30:02,332 INFO     
+file was run by crontab at this time.It took 0.14331889152526855seconds for program to run
+2020-04-12 04:30:02,332 INFO     []
+2020-04-12 06:30:02,607 INFO     
+file was run by crontab at this time.It took 0.15495610237121582seconds for program to run
+2020-04-12 06:30:02,607 INFO     []
+2020-04-12 08:30:02,969 INFO     
+file was run by crontab at this time.It took 0.17821097373962402seconds for program to run
+2020-04-12 08:30:02,969 INFO     []
+2020-04-12 10:30:01,775 INFO     
+file was run by crontab at this time.It took 0.17716741561889648seconds for program to run
+2020-04-12 10:30:01,775 INFO     []
+2020-04-12 11:01:08,531 INFO     
+file was run by crontab at this time.It took 0.12599706649780273seconds for program to run
+2020-04-12 11:01:08,531 INFO     []
+2020-04-12 12:30:02,943 INFO     
+file was run by crontab at this time.It took 0.18830275535583496seconds for program to run
+2020-04-12 12:30:02,943 INFO     []
+2020-04-12 14:30:02,130 INFO     
+file was run by crontab at this time.It took 0.24531960487365723seconds for program to run
+2020-04-12 14:30:02,130 INFO     [CVE Number: CVE-2020-11712 
+Impact Score: 0.0
+Desc: Open Upload through 0.4.3 allows XSS via index.php?action=u and the filename field.
+]
+2020-04-12 16:30:02,344 INFO     
+file was run by crontab at this time.It took 0.20896315574645996seconds for program to run
+2020-04-12 16:30:02,344 INFO     [CVE Number: CVE-2020-11712 
+Impact Score: 0.0
+Desc: Open Upload through 0.4.3 allows XSS via index.php?action=u and the filename field.
+]
+2020-04-12 18:30:02,676 INFO     
+file was run by crontab at this time.It took 0.1918025016784668seconds for program to run
+2020-04-12 18:30:02,676 INFO     [CVE Number: CVE-2020-11712 
+Impact Score: 0.0
+Desc: Open Upload through 0.4.3 allows XSS via index.php?action=u and the filename field.
+]
+2020-04-12 20:30:02,586 INFO     
+file was run by crontab at this time.It took 0.10796999931335449seconds for program to run
+2020-04-12 20:30:02,586 INFO     [CVE Number: CVE-2020-11712 
+Impact Score: 0.0
+Desc: Open Upload through 0.4.3 allows XSS via index.php?action=u and the filename field.
+, CVE Number: CVE-2020-11725 
+Impact Score: 0.0
+Desc: snd_ctl_elem_add in sound/core/control.c in the Linux kernel through 5.6.3 has a count=info->owner typo, which is mishandled in the private_size*count multiplication.
+]
+2020-04-12 22:30:02,746 INFO     
+file was run by crontab at this time.It took 0.15062332153320312seconds for program to run
+2020-04-12 22:30:02,746 INFO     [CVE Number: CVE-2020-11712 
+Impact Score: 0.0
+Desc: Open Upload through 0.4.3 allows XSS via index.php?action=u and the filename field.
+, CVE Number: CVE-2020-11725 
+Impact Score: 0.0
+Desc: snd_ctl_elem_add in sound/core/control.c in the Linux kernel through 5.6.3 has a count=info->owner typo, which is mishandled in the private_size*count multiplication.
+]
+2020-04-13 00:30:07,328 INFO     
+file was run by crontab at this time.It took 4.9437689781188965seconds for program to run
+2020-04-13 00:30:07,328 INFO     []
+2020-04-13 02:30:02,448 INFO     
+file was run by crontab at this time.It took 0.21167969703674316seconds for program to run
+2020-04-13 02:30:02,448 INFO     []
+2020-04-13 04:30:02,430 INFO     
+file was run by crontab at this time.It took 0.15282225608825684seconds for program to run
+2020-04-13 04:30:02,430 INFO     []
+2020-04-13 06:30:02,730 INFO     
+file was run by crontab at this time.It took 0.19258785247802734seconds for program to run
+2020-04-13 06:30:02,730 INFO     []
+2020-04-13 08:30:02,829 INFO     
+file was run by crontab at this time.It took 0.18870306015014648seconds for program to run
+2020-04-13 08:30:02,829 INFO     []
+2020-04-13 10:30:02,769 INFO     
+file was run by crontab at this time.It took 0.15724444389343262seconds for program to run
+2020-04-13 10:30:02,769 INFO     []
+2020-04-13 12:30:02,880 INFO     
+file was run by crontab at this time.It took 0.15738677978515625seconds for program to run
+2020-04-13 12:30:02,881 INFO     [CVE Number: CVE-2020-11673 
+Impact Score: 0.0
+Desc: An issue was discovered in the Responsive Poll through 1.3.4 for Wordpress. It allows an unauthenticated user to manipulate polls, e.g., delete, clone, or view a hidden poll. This is due to the usage of the callback wp_ajax_nopriv function in Includes/Total-Soft-Poll-Ajax.php for sensitive operations.
+]
+2020-04-13 14:30:03,340 INFO     
+file was run by crontab at this time.It took 0.27582454681396484seconds for program to run
+2020-04-13 14:30:03,340 INFO     [CVE Number: CVE-2019-1866 
+Impact Score: 0.0
+Desc: Cisco Webex Business Suite before 39.1.0 contains a vulnerability that could allow an unauthenticated, remote attacker to affect the integrity of the application. The vulnerability is due to improper validation of host header values. An attacker with a privileged network position, either a man-in-the-middle or by intercepting wireless network traffic, could exploit this vulnerability to manipulate header values sent by a client to the affected application. The attacker could cause the application to use input from the header to redirect a user from the Cisco Webex Meetings Online site to an arbitrary site of the attacker's choosing.
+, CVE Number: CVE-2020-11673 
+Impact Score: 0.0
+Desc: An issue was discovered in the Responsive Poll through 1.3.4 for Wordpress. It allows an unauthenticated user to manipulate polls, e.g., delete, clone, or view a hidden poll. This is due to the usage of the callback wp_ajax_nopriv function in Includes/Total-Soft-Poll-Ajax.php for sensitive operations.
+, CVE Number: CVE-2020-3126 
+Impact Score: 0.0
+Desc: vulnerability within the Multimedia Viewer feature of Cisco Webex Meetings could allow an authenticated, remote attacker to bypass security protections. The vulnerability is due to missing security warning dialog boxes when a room host views shared multimedia files. An authenticated, remote attacker could exploit this vulnerability by using the host role to share files within the Multimedia sharing feature and convincing a former room host to view that file. A warning dialog normally appears cautioning users before the file is displayed; however, the former host would not see that warning dialog, and any shared multimedia would be rendered within the user's browser. The attacker could leverage this behavior to conduct additional attacks by including malicious files within a targeted room host's browser window.
+]
+2020-04-13 16:30:02,438 INFO     
+file was run by crontab at this time.It took 0.36632561683654785seconds for program to run
+2020-04-13 16:30:02,439 INFO     [CVE Number: CVE-2019-1866 
+Impact Score: 1.4
+Desc: Cisco Webex Business Suite before 39.1.0 contains a vulnerability that could allow an unauthenticated, remote attacker to affect the integrity of the application. The vulnerability is due to improper validation of host header values. An attacker with a privileged network position, either a man-in-the-middle or by intercepting wireless network traffic, could exploit this vulnerability to manipulate header values sent by a client to the affected application. The attacker could cause the application to use input from the header to redirect a user from the Cisco Webex Meetings Online site to an arbitrary site of the attacker's choosing.
+, CVE Number: CVE-2020-11673 
+Impact Score: 5.9
+Desc: An issue was discovered in the Responsive Poll through 1.3.4 for Wordpress. It allows an unauthenticated user to manipulate polls, e.g., delete, clone, or view a hidden poll. This is due to the usage of the callback wp_ajax_nopriv function in Includes/Total-Soft-Poll-Ajax.php for sensitive operations.
+, CVE Number: CVE-2020-3126 
+Impact Score: 0.0
+Desc: vulnerability within the Multimedia Viewer feature of Cisco Webex Meetings could allow an authenticated, remote attacker to bypass security protections. The vulnerability is due to missing security warning dialog boxes when a room host views shared multimedia files. An authenticated, remote attacker could exploit this vulnerability by using the host role to share files within the Multimedia sharing feature and convincing a former room host to view that file. A warning dialog normally appears cautioning users before the file is displayed; however, the former host would not see that warning dialog, and any shared multimedia would be rendered within the user's browser. The attacker could leverage this behavior to conduct additional attacks by including malicious files within a targeted room host's browser window.
+, CVE Number: CVE-2020-6423 
+Impact Score: 0.0
+Desc: Use after free in audio in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6430 
+Impact Score: 0.0
+Desc: Type Confusion in V8 in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6431 
+Impact Score: 0.0
+Desc: Insufficient policy enforcement in full screen in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to spoof security UI via a crafted HTML page.
+, CVE Number: CVE-2020-6432 
+Impact Score: 0.0
+Desc: Insufficient policy enforcement in navigations in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to bypass navigation restrictions via a crafted HTML page.
+, CVE Number: CVE-2020-6433 
+Impact Score: 0.0
+Desc: Insufficient policy enforcement in extensions in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to bypass navigation restrictions via a crafted HTML page.
+, CVE Number: CVE-2020-6434 
+Impact Score: 0.0
+Desc: Use after free in devtools in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6435 
+Impact Score: 0.0
+Desc: Insufficient policy enforcement in extensions in Google Chrome prior to 81.0.4044.92 allowed a remote attacker who had compromised the renderer process to bypass navigation restrictions via a crafted HTML page.
+, CVE Number: CVE-2020-6436 
+Impact Score: 0.0
+Desc: Use after free in window management in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6437 
+Impact Score: 0.0
+Desc: Inappropriate implementation in WebView in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to spoof security UI via a crafted application.
+, CVE Number: CVE-2020-6438 
+Impact Score: 0.0
+Desc: Insufficient policy enforcement in extensions in Google Chrome prior to 81.0.4044.92 allowed an attacker who convinced a user to install a malicious extension to obtain potentially sensitive information from process memory via a crafted Chrome Extension.
+, CVE Number: CVE-2020-6439 
+Impact Score: 0.0
+Desc: Insufficient policy enforcement in navigations in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to bypass security UI via a crafted HTML page.
+, CVE Number: CVE-2020-6440 
+Impact Score: 0.0
+Desc: Inappropriate implementation in extensions in Google Chrome prior to 81.0.4044.92 allowed an attacker who convinced a user to install a malicious extension to obtain potentially sensitive information via a crafted Chrome Extension.
+, CVE Number: CVE-2020-6441 
+Impact Score: 0.0
+Desc: Insufficient policy enforcement in omnibox in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to bypass security UI via a crafted HTML page.
+, CVE Number: CVE-2020-6442 
+Impact Score: 0.0
+Desc: Inappropriate implementation in cache in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to leak cross-origin data via a crafted HTML page.
+, CVE Number: CVE-2020-6443 
+Impact Score: 0.0
+Desc: Insufficient data validation in developer tools in Google Chrome prior to 81.0.4044.92 allowed a remote attacker who had convinced the user to use devtools to execute arbitrary code via a crafted HTML page.
+, CVE Number: CVE-2020-6444 
+Impact Score: 0.0
+Desc: Uninitialized use in WebRTC in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6445 
+Impact Score: 0.0
+Desc: Insufficient policy enforcement in trusted types in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to bypass content security policy via a crafted HTML page.
+, CVE Number: CVE-2020-6446 
+Impact Score: 0.0
+Desc: Insufficient policy enforcement in trusted types in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to bypass content security policy via a crafted HTML page.
+, CVE Number: CVE-2020-6447 
+Impact Score: 0.0
+Desc: Inappropriate implementation in developer tools in Google Chrome prior to 81.0.4044.92 allowed a remote attacker who had convinced the user to use devtools to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6448 
+Impact Score: 0.0
+Desc: Use after free in V8 in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6450 
+Impact Score: 0.0
+Desc: Use after free in WebAudio in Google Chrome prior to 80.0.3987.162 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6451 
+Impact Score: 0.0
+Desc: Use after free in WebAudio in Google Chrome prior to 80.0.3987.162 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6452 
+Impact Score: 0.0
+Desc: Heap buffer overflow in media in Google Chrome prior to 80.0.3987.162 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6454 
+Impact Score: 0.0
+Desc: Use after free in extensions in Google Chrome prior to 81.0.4044.92 allowed an attacker who convinced a user to install a malicious extension to potentially exploit heap corruption via a crafted Chrome Extension.
+, CVE Number: CVE-2020-6455 
+Impact Score: 0.0
+Desc: Out of bounds read in WebSQL in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6456 
+Impact Score: 0.0
+Desc: Insufficient validation of untrusted input in clipboard in Google Chrome prior to 81.0.4044.92 allowed a local attacker to bypass site isolation via crafted clipboard contents.
+]
+2020-04-13 17:09:04,543 INFO     
+file was run by crontab at this time.It took 0.17442631721496582seconds for program to run
+2020-04-13 17:09:04,543 INFO     [CVE Number: CVE-2019-1866 
+Impact Score: 1.4
+Desc: Cisco Webex Business Suite before 39.1.0 contains a vulnerability that could allow an unauthenticated, remote attacker to affect the integrity of the application. The vulnerability is due to improper validation of host header values. An attacker with a privileged network position, either a man-in-the-middle or by intercepting wireless network traffic, could exploit this vulnerability to manipulate header values sent by a client to the affected application. The attacker could cause the application to use input from the header to redirect a user from the Cisco Webex Meetings Online site to an arbitrary site of the attacker's choosing.
+, CVE Number: CVE-2020-11673 
+Impact Score: 5.9
+Desc: An issue was discovered in the Responsive Poll through 1.3.4 for Wordpress. It allows an unauthenticated user to manipulate polls, e.g., delete, clone, or view a hidden poll. This is due to the usage of the callback wp_ajax_nopriv function in Includes/Total-Soft-Poll-Ajax.php for sensitive operations.
+, CVE Number: CVE-2020-3126 
+Impact Score: 0.0
+Desc: vulnerability within the Multimedia Viewer feature of Cisco Webex Meetings could allow an authenticated, remote attacker to bypass security protections. The vulnerability is due to missing security warning dialog boxes when a room host views shared multimedia files. An authenticated, remote attacker could exploit this vulnerability by using the host role to share files within the Multimedia sharing feature and convincing a former room host to view that file. A warning dialog normally appears cautioning users before the file is displayed; however, the former host would not see that warning dialog, and any shared multimedia would be rendered within the user's browser. The attacker could leverage this behavior to conduct additional attacks by including malicious files within a targeted room host's browser window.
+, CVE Number: CVE-2020-6423 
+Impact Score: 0.0
+Desc: Use after free in audio in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6430 
+Impact Score: 0.0
+Desc: Type Confusion in V8 in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6431 
+Impact Score: 0.0
+Desc: Insufficient policy enforcement in full screen in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to spoof security UI via a crafted HTML page.
+, CVE Number: CVE-2020-6432 
+Impact Score: 0.0
+Desc: Insufficient policy enforcement in navigations in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to bypass navigation restrictions via a crafted HTML page.
+, CVE Number: CVE-2020-6433 
+Impact Score: 0.0
+Desc: Insufficient policy enforcement in extensions in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to bypass navigation restrictions via a crafted HTML page.
+, CVE Number: CVE-2020-6434 
+Impact Score: 0.0
+Desc: Use after free in devtools in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6435 
+Impact Score: 0.0
+Desc: Insufficient policy enforcement in extensions in Google Chrome prior to 81.0.4044.92 allowed a remote attacker who had compromised the renderer process to bypass navigation restrictions via a crafted HTML page.
+, CVE Number: CVE-2020-6436 
+Impact Score: 0.0
+Desc: Use after free in window management in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6437 
+Impact Score: 0.0
+Desc: Inappropriate implementation in WebView in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to spoof security UI via a crafted application.
+, CVE Number: CVE-2020-6438 
+Impact Score: 0.0
+Desc: Insufficient policy enforcement in extensions in Google Chrome prior to 81.0.4044.92 allowed an attacker who convinced a user to install a malicious extension to obtain potentially sensitive information from process memory via a crafted Chrome Extension.
+, CVE Number: CVE-2020-6439 
+Impact Score: 0.0
+Desc: Insufficient policy enforcement in navigations in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to bypass security UI via a crafted HTML page.
+, CVE Number: CVE-2020-6440 
+Impact Score: 0.0
+Desc: Inappropriate implementation in extensions in Google Chrome prior to 81.0.4044.92 allowed an attacker who convinced a user to install a malicious extension to obtain potentially sensitive information via a crafted Chrome Extension.
+, CVE Number: CVE-2020-6441 
+Impact Score: 0.0
+Desc: Insufficient policy enforcement in omnibox in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to bypass security UI via a crafted HTML page.
+, CVE Number: CVE-2020-6442 
+Impact Score: 0.0
+Desc: Inappropriate implementation in cache in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to leak cross-origin data via a crafted HTML page.
+, CVE Number: CVE-2020-6443 
+Impact Score: 0.0
+Desc: Insufficient data validation in developer tools in Google Chrome prior to 81.0.4044.92 allowed a remote attacker who had convinced the user to use devtools to execute arbitrary code via a crafted HTML page.
+, CVE Number: CVE-2020-6444 
+Impact Score: 0.0
+Desc: Uninitialized use in WebRTC in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6445 
+Impact Score: 0.0
+Desc: Insufficient policy enforcement in trusted types in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to bypass content security policy via a crafted HTML page.
+, CVE Number: CVE-2020-6446 
+Impact Score: 0.0
+Desc: Insufficient policy enforcement in trusted types in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to bypass content security policy via a crafted HTML page.
+, CVE Number: CVE-2020-6447 
+Impact Score: 0.0
+Desc: Inappropriate implementation in developer tools in Google Chrome prior to 81.0.4044.92 allowed a remote attacker who had convinced the user to use devtools to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6448 
+Impact Score: 0.0
+Desc: Use after free in V8 in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6450 
+Impact Score: 0.0
+Desc: Use after free in WebAudio in Google Chrome prior to 80.0.3987.162 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6451 
+Impact Score: 0.0
+Desc: Use after free in WebAudio in Google Chrome prior to 80.0.3987.162 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6452 
+Impact Score: 0.0
+Desc: Heap buffer overflow in media in Google Chrome prior to 80.0.3987.162 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6454 
+Impact Score: 0.0
+Desc: Use after free in extensions in Google Chrome prior to 81.0.4044.92 allowed an attacker who convinced a user to install a malicious extension to potentially exploit heap corruption via a crafted Chrome Extension.
+, CVE Number: CVE-2020-6455 
+Impact Score: 0.0
+Desc: Out of bounds read in WebSQL in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6456 
+Impact Score: 0.0
+Desc: Insufficient validation of untrusted input in clipboard in Google Chrome prior to 81.0.4044.92 allowed a local attacker to bypass site isolation via crafted clipboard contents.
+]
+2020-04-13 17:20:01,984 INFO     
+file was run by crontab at this time.It took 0.34186530113220215seconds for program to run
+2020-04-13 17:20:01,984 INFO     [CVE Number: CVE-2019-1866 
+Impact Score: 1.4
+Desc: Cisco Webex Business Suite before 39.1.0 contains a vulnerability that could allow an unauthenticated, remote attacker to affect the integrity of the application. The vulnerability is due to improper validation of host header values. An attacker with a privileged network position, either a man-in-the-middle or by intercepting wireless network traffic, could exploit this vulnerability to manipulate header values sent by a client to the affected application. The attacker could cause the application to use input from the header to redirect a user from the Cisco Webex Meetings Online site to an arbitrary site of the attacker's choosing.
+, CVE Number: CVE-2020-11673 
+Impact Score: 5.9
+Desc: An issue was discovered in the Responsive Poll through 1.3.4 for Wordpress. It allows an unauthenticated user to manipulate polls, e.g., delete, clone, or view a hidden poll. This is due to the usage of the callback wp_ajax_nopriv function in Includes/Total-Soft-Poll-Ajax.php for sensitive operations.
+, CVE Number: CVE-2020-3126 
+Impact Score: 0.0
+Desc: vulnerability within the Multimedia Viewer feature of Cisco Webex Meetings could allow an authenticated, remote attacker to bypass security protections. The vulnerability is due to missing security warning dialog boxes when a room host views shared multimedia files. An authenticated, remote attacker could exploit this vulnerability by using the host role to share files within the Multimedia sharing feature and convincing a former room host to view that file. A warning dialog normally appears cautioning users before the file is displayed; however, the former host would not see that warning dialog, and any shared multimedia would be rendered within the user's browser. The attacker could leverage this behavior to conduct additional attacks by including malicious files within a targeted room host's browser window.
+, CVE Number: CVE-2020-6423 
+Impact Score: 0.0
+Desc: Use after free in audio in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6430 
+Impact Score: 0.0
+Desc: Type Confusion in V8 in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6431 
+Impact Score: 0.0
+Desc: Insufficient policy enforcement in full screen in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to spoof security UI via a crafted HTML page.
+, CVE Number: CVE-2020-6432 
+Impact Score: 0.0
+Desc: Insufficient policy enforcement in navigations in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to bypass navigation restrictions via a crafted HTML page.
+, CVE Number: CVE-2020-6433 
+Impact Score: 0.0
+Desc: Insufficient policy enforcement in extensions in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to bypass navigation restrictions via a crafted HTML page.
+, CVE Number: CVE-2020-6434 
+Impact Score: 0.0
+Desc: Use after free in devtools in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6435 
+Impact Score: 0.0
+Desc: Insufficient policy enforcement in extensions in Google Chrome prior to 81.0.4044.92 allowed a remote attacker who had compromised the renderer process to bypass navigation restrictions via a crafted HTML page.
+, CVE Number: CVE-2020-6436 
+Impact Score: 0.0
+Desc: Use after free in window management in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6437 
+Impact Score: 0.0
+Desc: Inappropriate implementation in WebView in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to spoof security UI via a crafted application.
+, CVE Number: CVE-2020-6438 
+Impact Score: 0.0
+Desc: Insufficient policy enforcement in extensions in Google Chrome prior to 81.0.4044.92 allowed an attacker who convinced a user to install a malicious extension to obtain potentially sensitive information from process memory via a crafted Chrome Extension.
+, CVE Number: CVE-2020-6439 
+Impact Score: 0.0
+Desc: Insufficient policy enforcement in navigations in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to bypass security UI via a crafted HTML page.
+, CVE Number: CVE-2020-6440 
+Impact Score: 0.0
+Desc: Inappropriate implementation in extensions in Google Chrome prior to 81.0.4044.92 allowed an attacker who convinced a user to install a malicious extension to obtain potentially sensitive information via a crafted Chrome Extension.
+, CVE Number: CVE-2020-6441 
+Impact Score: 0.0
+Desc: Insufficient policy enforcement in omnibox in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to bypass security UI via a crafted HTML page.
+, CVE Number: CVE-2020-6442 
+Impact Score: 0.0
+Desc: Inappropriate implementation in cache in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to leak cross-origin data via a crafted HTML page.
+, CVE Number: CVE-2020-6443 
+Impact Score: 0.0
+Desc: Insufficient data validation in developer tools in Google Chrome prior to 81.0.4044.92 allowed a remote attacker who had convinced the user to use devtools to execute arbitrary code via a crafted HTML page.
+, CVE Number: CVE-2020-6444 
+Impact Score: 0.0
+Desc: Uninitialized use in WebRTC in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6445 
+Impact Score: 0.0
+Desc: Insufficient policy enforcement in trusted types in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to bypass content security policy via a crafted HTML page.
+, CVE Number: CVE-2020-6446 
+Impact Score: 0.0
+Desc: Insufficient policy enforcement in trusted types in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to bypass content security policy via a crafted HTML page.
+, CVE Number: CVE-2020-6447 
+Impact Score: 0.0
+Desc: Inappropriate implementation in developer tools in Google Chrome prior to 81.0.4044.92 allowed a remote attacker who had convinced the user to use devtools to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6448 
+Impact Score: 0.0
+Desc: Use after free in V8 in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6450 
+Impact Score: 0.0
+Desc: Use after free in WebAudio in Google Chrome prior to 80.0.3987.162 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6451 
+Impact Score: 0.0
+Desc: Use after free in WebAudio in Google Chrome prior to 80.0.3987.162 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6452 
+Impact Score: 0.0
+Desc: Heap buffer overflow in media in Google Chrome prior to 80.0.3987.162 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6454 
+Impact Score: 0.0
+Desc: Use after free in extensions in Google Chrome prior to 81.0.4044.92 allowed an attacker who convinced a user to install a malicious extension to potentially exploit heap corruption via a crafted Chrome Extension.
+, CVE Number: CVE-2020-6455 
+Impact Score: 0.0
+Desc: Out of bounds read in WebSQL in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6456 
+Impact Score: 0.0
+Desc: Insufficient validation of untrusted input in clipboard in Google Chrome prior to 81.0.4044.92 allowed a local attacker to bypass site isolation via crafted clipboard contents.
+]
+2020-04-13 17:20:10,470 INFO     
+file was run by crontab at this time.It took 0.16512036323547363seconds for program to run
+2020-04-13 17:20:10,470 INFO     [CVE Number: CVE-2019-1866 
+Impact Score: 1.4
+Desc: Cisco Webex Business Suite before 39.1.0 contains a vulnerability that could allow an unauthenticated, remote attacker to affect the integrity of the application. The vulnerability is due to improper validation of host header values. An attacker with a privileged network position, either a man-in-the-middle or by intercepting wireless network traffic, could exploit this vulnerability to manipulate header values sent by a client to the affected application. The attacker could cause the application to use input from the header to redirect a user from the Cisco Webex Meetings Online site to an arbitrary site of the attacker's choosing.
+, CVE Number: CVE-2020-11673 
+Impact Score: 5.9
+Desc: An issue was discovered in the Responsive Poll through 1.3.4 for Wordpress. It allows an unauthenticated user to manipulate polls, e.g., delete, clone, or view a hidden poll. This is due to the usage of the callback wp_ajax_nopriv function in Includes/Total-Soft-Poll-Ajax.php for sensitive operations.
+, CVE Number: CVE-2020-3126 
+Impact Score: 0.0
+Desc: vulnerability within the Multimedia Viewer feature of Cisco Webex Meetings could allow an authenticated, remote attacker to bypass security protections. The vulnerability is due to missing security warning dialog boxes when a room host views shared multimedia files. An authenticated, remote attacker could exploit this vulnerability by using the host role to share files within the Multimedia sharing feature and convincing a former room host to view that file. A warning dialog normally appears cautioning users before the file is displayed; however, the former host would not see that warning dialog, and any shared multimedia would be rendered within the user's browser. The attacker could leverage this behavior to conduct additional attacks by including malicious files within a targeted room host's browser window.
+, CVE Number: CVE-2020-6423 
+Impact Score: 0.0
+Desc: Use after free in audio in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6430 
+Impact Score: 0.0
+Desc: Type Confusion in V8 in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6431 
+Impact Score: 0.0
+Desc: Insufficient policy enforcement in full screen in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to spoof security UI via a crafted HTML page.
+, CVE Number: CVE-2020-6432 
+Impact Score: 0.0
+Desc: Insufficient policy enforcement in navigations in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to bypass navigation restrictions via a crafted HTML page.
+, CVE Number: CVE-2020-6433 
+Impact Score: 0.0
+Desc: Insufficient policy enforcement in extensions in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to bypass navigation restrictions via a crafted HTML page.
+, CVE Number: CVE-2020-6434 
+Impact Score: 0.0
+Desc: Use after free in devtools in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6435 
+Impact Score: 0.0
+Desc: Insufficient policy enforcement in extensions in Google Chrome prior to 81.0.4044.92 allowed a remote attacker who had compromised the renderer process to bypass navigation restrictions via a crafted HTML page.
+, CVE Number: CVE-2020-6436 
+Impact Score: 0.0
+Desc: Use after free in window management in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6437 
+Impact Score: 0.0
+Desc: Inappropriate implementation in WebView in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to spoof security UI via a crafted application.
+, CVE Number: CVE-2020-6438 
+Impact Score: 0.0
+Desc: Insufficient policy enforcement in extensions in Google Chrome prior to 81.0.4044.92 allowed an attacker who convinced a user to install a malicious extension to obtain potentially sensitive information from process memory via a crafted Chrome Extension.
+, CVE Number: CVE-2020-6439 
+Impact Score: 0.0
+Desc: Insufficient policy enforcement in navigations in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to bypass security UI via a crafted HTML page.
+, CVE Number: CVE-2020-6440 
+Impact Score: 0.0
+Desc: Inappropriate implementation in extensions in Google Chrome prior to 81.0.4044.92 allowed an attacker who convinced a user to install a malicious extension to obtain potentially sensitive information via a crafted Chrome Extension.
+, CVE Number: CVE-2020-6441 
+Impact Score: 0.0
+Desc: Insufficient policy enforcement in omnibox in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to bypass security UI via a crafted HTML page.
+, CVE Number: CVE-2020-6442 
+Impact Score: 0.0
+Desc: Inappropriate implementation in cache in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to leak cross-origin data via a crafted HTML page.
+, CVE Number: CVE-2020-6443 
+Impact Score: 0.0
+Desc: Insufficient data validation in developer tools in Google Chrome prior to 81.0.4044.92 allowed a remote attacker who had convinced the user to use devtools to execute arbitrary code via a crafted HTML page.
+, CVE Number: CVE-2020-6444 
+Impact Score: 0.0
+Desc: Uninitialized use in WebRTC in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6445 
+Impact Score: 0.0
+Desc: Insufficient policy enforcement in trusted types in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to bypass content security policy via a crafted HTML page.
+, CVE Number: CVE-2020-6446 
+Impact Score: 0.0
+Desc: Insufficient policy enforcement in trusted types in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to bypass content security policy via a crafted HTML page.
+, CVE Number: CVE-2020-6447 
+Impact Score: 0.0
+Desc: Inappropriate implementation in developer tools in Google Chrome prior to 81.0.4044.92 allowed a remote attacker who had convinced the user to use devtools to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6448 
+Impact Score: 0.0
+Desc: Use after free in V8 in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6450 
+Impact Score: 0.0
+Desc: Use after free in WebAudio in Google Chrome prior to 80.0.3987.162 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6451 
+Impact Score: 0.0
+Desc: Use after free in WebAudio in Google Chrome prior to 80.0.3987.162 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6452 
+Impact Score: 0.0
+Desc: Heap buffer overflow in media in Google Chrome prior to 80.0.3987.162 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6454 
+Impact Score: 0.0
+Desc: Use after free in extensions in Google Chrome prior to 81.0.4044.92 allowed an attacker who convinced a user to install a malicious extension to potentially exploit heap corruption via a crafted Chrome Extension.
+, CVE Number: CVE-2020-6455 
+Impact Score: 0.0
+Desc: Out of bounds read in WebSQL in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6456 
+Impact Score: 0.0
+Desc: Insufficient validation of untrusted input in clipboard in Google Chrome prior to 81.0.4044.92 allowed a local attacker to bypass site isolation via crafted clipboard contents.
+]
+2020-04-13 18:51:49,863 INFO     
+file was run by crontab at this time.It took 0.2853848934173584seconds for program to run
+2020-04-13 18:51:49,864 INFO     [CVE Number: CVE-2019-1866 
+Impact Score: 1.4
+Desc: Cisco Webex Business Suite before 39.1.0 contains a vulnerability that could allow an unauthenticated, remote attacker to affect the integrity of the application. The vulnerability is due to improper validation of host header values. An attacker with a privileged network position, either a man-in-the-middle or by intercepting wireless network traffic, could exploit this vulnerability to manipulate header values sent by a client to the affected application. The attacker could cause the application to use input from the header to redirect a user from the Cisco Webex Meetings Online site to an arbitrary site of the attacker's choosing.
+, CVE Number: CVE-2020-11673 
+Impact Score: 5.9
+Desc: An issue was discovered in the Responsive Poll through 1.3.4 for Wordpress. It allows an unauthenticated user to manipulate polls, e.g., delete, clone, or view a hidden poll. This is due to the usage of the callback wp_ajax_nopriv function in Includes/Total-Soft-Poll-Ajax.php for sensitive operations.
+, CVE Number: CVE-2020-3126 
+Impact Score: 0.0
+Desc: vulnerability within the Multimedia Viewer feature of Cisco Webex Meetings could allow an authenticated, remote attacker to bypass security protections. The vulnerability is due to missing security warning dialog boxes when a room host views shared multimedia files. An authenticated, remote attacker could exploit this vulnerability by using the host role to share files within the Multimedia sharing feature and convincing a former room host to view that file. A warning dialog normally appears cautioning users before the file is displayed; however, the former host would not see that warning dialog, and any shared multimedia would be rendered within the user's browser. The attacker could leverage this behavior to conduct additional attacks by including malicious files within a targeted room host's browser window.
+, CVE Number: CVE-2020-6423 
+Impact Score: 5.9
+Desc: Use after free in audio in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6430 
+Impact Score: 5.9
+Desc: Type Confusion in V8 in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6431 
+Impact Score: 0.0
+Desc: Insufficient policy enforcement in full screen in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to spoof security UI via a crafted HTML page.
+, CVE Number: CVE-2020-6432 
+Impact Score: 0.0
+Desc: Insufficient policy enforcement in navigations in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to bypass navigation restrictions via a crafted HTML page.
+, CVE Number: CVE-2020-6433 
+Impact Score: 0.0
+Desc: Insufficient policy enforcement in extensions in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to bypass navigation restrictions via a crafted HTML page.
+, CVE Number: CVE-2020-6434 
+Impact Score: 0.0
+Desc: Use after free in devtools in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6435 
+Impact Score: 0.0
+Desc: Insufficient policy enforcement in extensions in Google Chrome prior to 81.0.4044.92 allowed a remote attacker who had compromised the renderer process to bypass navigation restrictions via a crafted HTML page.
+, CVE Number: CVE-2020-6436 
+Impact Score: 0.0
+Desc: Use after free in window management in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6437 
+Impact Score: 0.0
+Desc: Inappropriate implementation in WebView in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to spoof security UI via a crafted application.
+, CVE Number: CVE-2020-6438 
+Impact Score: 0.0
+Desc: Insufficient policy enforcement in extensions in Google Chrome prior to 81.0.4044.92 allowed an attacker who convinced a user to install a malicious extension to obtain potentially sensitive information from process memory via a crafted Chrome Extension.
+, CVE Number: CVE-2020-6439 
+Impact Score: 0.0
+Desc: Insufficient policy enforcement in navigations in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to bypass security UI via a crafted HTML page.
+, CVE Number: CVE-2020-6440 
+Impact Score: 0.0
+Desc: Inappropriate implementation in extensions in Google Chrome prior to 81.0.4044.92 allowed an attacker who convinced a user to install a malicious extension to obtain potentially sensitive information via a crafted Chrome Extension.
+, CVE Number: CVE-2020-6441 
+Impact Score: 0.0
+Desc: Insufficient policy enforcement in omnibox in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to bypass security UI via a crafted HTML page.
+, CVE Number: CVE-2020-6442 
+Impact Score: 0.0
+Desc: Inappropriate implementation in cache in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to leak cross-origin data via a crafted HTML page.
+, CVE Number: CVE-2020-6443 
+Impact Score: 0.0
+Desc: Insufficient data validation in developer tools in Google Chrome prior to 81.0.4044.92 allowed a remote attacker who had convinced the user to use devtools to execute arbitrary code via a crafted HTML page.
+, CVE Number: CVE-2020-6444 
+Impact Score: 0.0
+Desc: Uninitialized use in WebRTC in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6445 
+Impact Score: 0.0
+Desc: Insufficient policy enforcement in trusted types in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to bypass content security policy via a crafted HTML page.
+, CVE Number: CVE-2020-6446 
+Impact Score: 0.0
+Desc: Insufficient policy enforcement in trusted types in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to bypass content security policy via a crafted HTML page.
+, CVE Number: CVE-2020-6447 
+Impact Score: 0.0
+Desc: Inappropriate implementation in developer tools in Google Chrome prior to 81.0.4044.92 allowed a remote attacker who had convinced the user to use devtools to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6448 
+Impact Score: 0.0
+Desc: Use after free in V8 in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6450 
+Impact Score: 0.0
+Desc: Use after free in WebAudio in Google Chrome prior to 80.0.3987.162 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6451 
+Impact Score: 0.0
+Desc: Use after free in WebAudio in Google Chrome prior to 80.0.3987.162 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6452 
+Impact Score: 0.0
+Desc: Heap buffer overflow in media in Google Chrome prior to 80.0.3987.162 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6454 
+Impact Score: 0.0
+Desc: Use after free in extensions in Google Chrome prior to 81.0.4044.92 allowed an attacker who convinced a user to install a malicious extension to potentially exploit heap corruption via a crafted Chrome Extension.
+, CVE Number: CVE-2020-6455 
+Impact Score: 0.0
+Desc: Out of bounds read in WebSQL in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+, CVE Number: CVE-2020-6456 
+Impact Score: 0.0
+Desc: Insufficient validation of untrusted input in clipboard in Google Chrome prior to 81.0.4044.92 allowed a local attacker to bypass site isolation via crafted clipboard contents.
+]

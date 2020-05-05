@@ -1,7 +1,11 @@
+#!/usr/bin/env python3
+
 from bs4 import BeautifulSoup
 import requests
 import ncasCurrentActivityClass
 import datetime
+import pickle
+import ParseJsonFile
 
 # This module web scrapes the ncas current activity page to find and grab
 # all the current activity posts on the website.
@@ -14,8 +18,8 @@ import datetime
 usCertGov = 'https://www.us-cert.gov'  # used to create a full link
 url = 'https://www.us-cert.gov/ncas/current-activity'  # the url of the website we want to scrape
 listofEntrys = []  # stores the list of all the entry's
+setofEntrys = set([]) 
 current_date = datetime.date.today()
-
 
 # Makes a request to a web page and requests the data from the page.
 # The content from data needs to be parsed in html format.
@@ -35,9 +39,12 @@ def getCurrentEntrys(content):
         entryDate = getEntryDate(post)
         entryDescription = getEntryDescription(post)
         entryLink = getEntryLink(post)
-        entry = ncasCurrentActivityClass.NcasCAObject(entryTitle, entryDate, entryDescription, entryLink)
-        if entry.getEntryDate() == current_date:
-            listofEntrys.append(entry)
+        entryKeywordID = ParseJsonFile.CheckForKeywords(entryTitle)
+        entry = ncasCurrentActivityClass.NcasCAObject(entryTitle, entryDate, entryDescription, entryLink, entryKeywordID)
+        if entryKeywordID > 0:
+            if entry.getEntryDate().date() == current_date:
+                listofEntrys.append(entry)
+
 
 
 # helper function that finds the title of the entry using the html tag
@@ -57,8 +64,10 @@ def getEntryDate(post):
     stringDateList = stringDate.split(',')
     stringDate = stringDateList[1] + stringDateList[2]
     stringDate = stringDate[1 : (len(stringDate) - 1)]
-    entryDate = datetime.datetime.strptime(stringDate, '%B %d %Y').date()
-    return entryDate
+    entryDate = datetime.datetime.strptime(stringDate, '%B %d %Y')
+    cur = datetime.datetime.now()
+    newEntryDate = datetime.datetime(entryDate.year, entryDate.month, entryDate.day, cur.hour, cur.minute, cur.second)
+    return newEntryDate
 
 
 # helper function that finds the description of the entry
@@ -79,12 +88,27 @@ def getEntryLink(post):
     link = LinkWithHtlmTags.get('href')
     return usCertGov + link
 
-""" calling functions to test """
 
+# Function that uses Serialization to determine if a post is new
+# if a post is new, add it to the returned list and add it to
+# the serialized set. 
+def checkCurrentPostsWithPreviousPosts():
+    #newPosts = []
+    #with open('ncasCurrentActivitySerialization','rb') as entrySet_saved_to_file:
+       # previousEntrySet = pickle.load(entrySet_saved_to_file)
+        #for post in listofEntrys:
+           # if post not in previousEntrySet:
+               # newPosts.append(post)
+               # previousEntrySet.add(post)
+        #entrySet_saved_to_file.close()
+    #with open('ncasCurrentActivitySerialization','wb') as entrySet_saved_to_file:
+               # pickle.dump(previousEntrySet,entrySet_saved_to_file)
+               # entrySet_saved_to_file.close()
+    return listofEntrys
+
+
+""" calling functions  """
 getncasCurrentActivity(url)
-#print(listofEntrys[0].getEntryTitle())
-#print(listofEntrys[0].getEntryDate())
-#print(listofEntrys[0].getEntryDescription())
-#print(listofEntrys[0].getEntryLink())
+newPostList = checkCurrentPostsWithPreviousPosts()
 
 

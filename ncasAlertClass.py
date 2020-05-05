@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # this module is a national cyber awarness systen akert class.
 # An alert has a page title, sub title, a release date and a summry List
 #
@@ -7,25 +9,35 @@
 
 class NcasAlert:
     # init method that constructs a alert instance from the ncas alert website
-    def __init__(self, pageTitle, subTitle, releaseDate, summaryList):
+    def __init__(self, pageTitle, subTitle, releaseDate, summaryList, keywordID):
         self.pageTitle = pageTitle
         self.subTitle = subTitle
         self.releaseDate = releaseDate
         self.summaryList = summaryList
-
-    # returns the page title as a string
+        self.keywordID = keywordID
+   
+   
+   # returns the page title as a string
     def getPageTitle(self):
         return self.pageTitle
-
+    
+    
     # returns the sub title as a string
     def getSubTitle(self):
         return self.subTitle
+
 
     # returns the release date as a string
     def getReleaseDate(self):
         return self.releaseDate
 
+
     # returns the summary list
     def getSummaryList(self):
         return self.summaryList
+
+
+    # returns the keyword ID 
+    def getKeywordID(self):
+        return self.keywordID
 

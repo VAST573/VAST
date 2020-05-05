@@ -51,6 +51,7 @@ def getCveInformation(nvd_json_dict):
                 cve_object = CveClass.Cve(cve_id_number, cve_impact_scoreV2, cve_impact_scoreV3,
                         cve_last_published_date, cve_last_modified_date, cve_description, cve_keyWordID)
                 cveList.append(cve_object)
+                print(index, cve_impact_scoreV2, cve_impact_scoreV3)
         index+=1
     return cveList
 
@@ -132,4 +133,12 @@ def PublishedLastTwoHours(cve_last_published_date):
     if (cve_last_published_date >= current_Time_minus_2_hours):
         return True
     return False 
+
+recent_nvd_file = '/home/ubuntu/SWEProject/nvdFileLocation/nvdcve-1.1-recent.json'
+
+# The nvd json file as a dict
+nvd_json_dict = openFile(recent_nvd_file)
+
+# traverse the nvd dict to get all the cve information as a list of cve's
+cveInstanceList = getCveInformation(nvd_json_dict)
 
